@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: light --default, dark;
+}
+
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: rgb(240, 240, 240);
+  color: #1f1f1f;
+}
+
+.navbar li{
+  color: gray;
+}
+.navbar li:hover{
+  color: #1f1f1f;
+}
+.navbar active{
+  color: #1f1f1f;
+  background: rgba(128, 128, 128, 0.275);
+}
