@@ -14,7 +14,9 @@ body {
   background-color: rgb(240, 240, 240);
   color: #1f1f1f;
 }
-
+button{
+  cursor: pointer;
+}
 .navbar li{
   color: gray;
 }
@@ -24,4 +26,22 @@ body {
 .navbar active{
   color: #1f1f1f;
   background: rgba(128, 128, 128, 0.275);
+}
+.primary-btn{
+  padding: 4px 16px;
+  background-color: #bef264;
+  border-radius: 8px;
+  font-weight: 500;
+}
+.primary-btn:hover{
+  background-color: #a3e635;
+}
+.secondary-btn{
+  padding: 4px 16px;
+  border: 1px solid rgba(128, 128, 128, 0.20);
+  border-radius: 8px;
+  font-weight: 500;
+}
+.secondary-btn:hover{
+  background-color: rgba(128, 128, 128, 0.10);;
 }
