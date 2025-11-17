@@ -12,7 +12,7 @@ const Banner = () => {
   return (
     <div className="w-full aspect-auto mt-8">
       <Swiper
-        modules={Autoplay}
+        modules={[Autoplay]}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
