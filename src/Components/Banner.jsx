@@ -10,7 +10,7 @@ import { IoMdArrowForward } from "react-icons/io";
 
 const Banner = () => {
   return (
-    <div className="w-full aspect-auto mt-8">
+    <div className="w-full aspect-auto mt-8  rounded-3xl overflow-hidden">
       <Swiper
         modules={[Autoplay]}
         autoplay={{

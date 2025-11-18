@@ -1,11 +1,11 @@
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
 @import "tailwindcss";
 
 @plugin "daisyui" {
   themes: light --default, dark;
 }
-
-/* Google font */
-@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
   font-family: "Urbanist", sans-serif;
@@ -14,34 +14,35 @@ body {
   background-color: rgb(240, 240, 240);
   color: #1f1f1f;
 }
-button{
+
+button {
   cursor: pointer;
 }
-.navbar li{
+.navbar li {
   color: gray;
 }
-.navbar li:hover{
+.navbar li:hover {
   color: #1f1f1f;
 }
-.navbar active{
+.navbar active {
   color: #1f1f1f;
   background: rgba(128, 128, 128, 0.275);
 }
-.primary-btn{
+.primary-btn {
   padding: 4px 16px;
   background-color: #bef264;
   border-radius: 8px;
   font-weight: 500;
 }
-.primary-btn:hover{
+.primary-btn:hover {
   background-color: #a3e635;
 }
-.secondary-btn{
+.secondary-btn {
   padding: 4px 16px;
-  border: 1px solid rgba(128, 128, 128, 0.20);
+  border: 1px solid rgba(128, 128, 128, 0.2);
   border-radius: 8px;
-  font-weight: 500;
+  font-weight: 600;
 }
-.secondary-btn:hover{
-  background-color: rgba(128, 128, 128, 0.10);;
+.secondary-btn:hover {
+  background-color: rgba(128, 128, 128, 0.1);
 }
