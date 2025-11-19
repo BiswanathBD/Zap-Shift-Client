@@ -30,7 +30,9 @@ const Footer = () => {
       </p>
 
       <ul className="flex gap-8 justify-center flex-wrap py-4 border-t-2 border-b-2 border-dashed border-[#03464D]">
-        {navOptions.map((nav) => nav)}
+        {navOptions.map((nav, i) => (
+          <li key={i}>{nav}</li>
+        ))}
       </ul>
 
       <div className="flex justify-center items-center gap-4 py-8">

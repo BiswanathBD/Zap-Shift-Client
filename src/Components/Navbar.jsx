@@ -44,8 +44,8 @@ const Navbar = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal ">
-          {navOptions.map((nav) => {
-            return <li className="px-1">{nav}</li>;
+          {navOptions.map((nav, i) => {
+            return <li key={i} className="px-1">{nav}</li>;
           })}
         </ul>
       </div>
