@@ -12,7 +12,18 @@ const Coverage = () => {
   const handleSearch = (e) => {
     e.preventDefault();
     const search = e.target.Search.value;
-    console.log(search);
+    if (!search) {
+      mapRef.current.flyTo(position, 8);
+      return;
+    }
+    const district = serviceCenters.find((c) =>
+      c.district.toLowerCase().includes(search.toLowerCase())
+    );
+
+    if (district) {
+      const coord = [district.latitude, district.longitude];
+      mapRef.current.flyTo(coord, 14);
+    }
   };
 
   const customIcon = new L.Icon({
@@ -28,7 +39,7 @@ const Coverage = () => {
 
       <form onSubmit={handleSearch} className="relative my-8 w-fit">
         <input
-          className="py-1 pl-8 bg-[rgb(240,240,240)] rounded-full focus:outline-gray-200  text-sm pr-20 md:w-sm"
+          className="py-2 pl-10 bg-[rgb(240,240,240)] rounded-full focus:outline-gray-200  text-sm pr-20 md:w-sm"
           type="text"
           name="Search"
           id=""
@@ -36,9 +47,9 @@ const Coverage = () => {
         />
         <CiSearch
           size={20}
-          className="absolute top-1/2 -translate-y-1/2 left-2"
+          className="absolute top-1/2 -translate-y-1/2 left-3"
         />
-        <button className="absolute bg-lime-300 text-sm font-semibold py-1 px-3 rounded-full top-0 right-0">
+        <button className="absolute bg-lime-300 text-sm font-semibold py-2 px-4 rounded-full top-0 right-0">
           Search
         </button>
       </form>
@@ -53,7 +64,7 @@ const Coverage = () => {
           center={position}
           zoom={8}
           scrollWheelZoom={false}
-          className="w-full h-[500px] mt-4 rounded-xl"
+          className="w-full h-[500px] mt-4 rounded-lg"
           ref={mapRef}
         >
           <TileLayer
@@ -67,9 +78,7 @@ const Coverage = () => {
               icon={customIcon}
             >
               <Popup>
-                <strong>
-                  {center.district}, {center.city}
-                </strong>
+                <strong>{center.district}, Bangladesh</strong>
                 <br />
                 {center.covered_area.join(", ")}
               </Popup>
