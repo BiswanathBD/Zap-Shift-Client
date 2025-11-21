@@ -24,9 +24,10 @@ button {
 .navbar li:hover {
   color: #1f1f1f;
 }
-.navbar active {
-  color: #bef264;
-  background: rgba(128, 128, 128, 0.275);
+.active {
+  color: black;
+  font-weight: 600;
+  background: #bef264;
 }
 .primary-btn {
   padding: 4px 16px;

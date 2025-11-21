@@ -29,7 +29,7 @@ const Coverage = () => {
   const customIcon = new L.Icon({
     iconUrl: "https://img.icons8.com/?size=128&id=h1ACssMxjHCf&format=png",
     iconSize: [28],
-    iconAnchor: [14, 32],
+    iconAnchor: [14, 38],
     popupAnchor: [0, -30],
   });
 
@@ -64,7 +64,7 @@ const Coverage = () => {
           center={position}
           zoom={8}
           scrollWheelZoom={false}
-          className="w-full h-[500px] mt-4 rounded-lg"
+          className="w-full h-[400px] mt-4 rounded-lg"
           ref={mapRef}
         >
           <TileLayer

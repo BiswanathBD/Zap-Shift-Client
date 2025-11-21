@@ -8,6 +8,7 @@ const Navbar = () => {
     <NavLink to={"/services"}>Services</NavLink>,
     <NavLink to={"/coverage"}>Coverage</NavLink>,
     <NavLink to={"/aboutUs"}>About Us</NavLink>,
+    <NavLink to={"/sendParcel"}>Send Parcel</NavLink>,
     <NavLink to={"/pricing"}>Pricing</NavLink>,
     <NavLink to={"/beRider"}>Be a Rider</NavLink>,
   ];
