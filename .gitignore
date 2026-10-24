@@ -12,6 +12,11 @@ dist
 dist-ssr
 *.local
 
+.vscode/
+api.js
+api.ts
+**/public/fonts/
+
 # Editor directories and files
 !.vscode/extensions.json
 .idea
